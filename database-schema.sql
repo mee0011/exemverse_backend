@@ -1,8 +1,4 @@
--- ExamVerse Database Schema - Additional Tables
--- Note: users table already exists
 
--- Courses table - Update existing table structure
--- Note: Run these ALTER statements to update existing table without losing data
 
 -- Update existing courses table structure
 CREATE TABLE users (
@@ -180,3 +176,4 @@ CREATE TABLE IF NOT EXISTS assignment_submissions (
     FOREIGN KEY (course_code) REFERENCES courses(course_code),
     FOREIGN KEY (instructor_email) REFERENCES users(email)
 );
+
